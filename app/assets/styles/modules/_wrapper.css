@@ -1,0 +1,13 @@
+.wrapper {
+  padding: 0 18px;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  &--medium {
+    max-width: 976px;
+  }
+
+  .wrapper {
+    padding: 0;
+  }
+}
