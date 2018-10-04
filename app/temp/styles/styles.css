@@ -559,6 +559,18 @@ a {
     max-width: 976px;
   }
 
+.wrapper--no-padding-until-medium {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+@media (min-width: 800px) {
+
+.wrapper--no-padding-until-medium {
+      padding: 0 18px
+  }
+  }
+
 .wrapper .wrapper {
     padding: 0;
   }
@@ -577,6 +589,20 @@ a {
 .page-section__blue {
     background-color: #2f5572;
     color: #fff;
+  }
+
+.page-section--testimonials {
+    background-color: #e0e6ef;
+    padding-bottom: 0;
+  }
+
+@media (min-width: 1010px) {
+
+.page-section--testimonials {
+      padding-bottom: 4.5rem;
+      background: url("/assets/images/testimonials-bg.jpg") top center no-repeat;
+      background-size: cover
+  }
   }
 
 .headline {
@@ -673,14 +699,24 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-
   border-bottom: 1px solid #fff;
+  padding-bottom: 1rem;
 }
 
 .featuers__tittle h2 {
     font-weight: 100;
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin-left: 1rem;
+  }
+
+.featuers__tittle--blue-border {
+    border-bottom: 1px solid #2f5572;
+    color: #2f5572;
+    margin-bottom: 2rem;
+  }
+
+.featuers__tittle--bold {
+    font-weight: 500;
   }
 
 @media (min-width: 530px) {
@@ -702,6 +738,11 @@ a {
       margin-left: 1rem;
       font-weight: 100;
       font-size: 2.3rem;
+    }
+
+    .featuers__tittle--blue-border {
+      border-bottom: 1px solid #2f5572;
+      color: #2f5572;
     }
   }
 
@@ -756,4 +797,57 @@ a {
     margin-top: 0;
     font-weight: 300;
     line-height: 1.65rem;
+  }
+
+.testimonial__card {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 0 18px 1px 18px;
+    margin-top: 6rem;
+  }
+
+@media (min-width: 800px) {
+
+.testimonial__card {
+      padding: 0 1.8125rem 1px 1.8125rem
+  }
+  }
+
+.testimonial--img {
+    border-radius: 80px;
+    overflow: hidden;
+    width: 160px;
+    height: 160px;
+    margin: 0 auto -80px auto;
+    position: relative;
+    top: -80px;
+    border: 6px solid rgba(255, 255, 255, 0.7);
+    -webkit-border-radius: 80px;
+    -moz-border-radius: 80px;
+    -ms-border-radius: 80px;
+    -o-border-radius: 80px;
+  }
+
+.testimonial__tittle {
+    color: #2f5572;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 0;
+  }
+
+.testimonial__subtittle {
+    color: #d59541;
+    text-align: center;
+    font-weight: 400;
+    font-size: 0.937rem;
+    margin: 0.25rem 0 1rem 0;
+  }
+
+@media (min-width: 1010px) {
+
+.testimonial {
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: 1fr 1fr 1fr
+}
   }

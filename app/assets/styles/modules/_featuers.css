@@ -1,13 +1,23 @@
 .featuers__tittle {
   display: flex;
   justify-content: center;
-
   border-bottom: 1px solid #fff;
+  padding-bottom: 1rem;
 
   h2 {
     font-weight: 100;
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin-left: 1rem;
+  }
+
+  &--blue-border {
+    border-bottom: 1px solid $mainblue;
+    color: $mainblue;
+    margin-bottom: 2rem;
+  }
+
+  &--bold {
+    font-weight: 500;
   }
 
   @mixin atsmall {
@@ -20,6 +30,11 @@
       margin-left: 1rem;
       font-weight: 100;
       font-size: 2.3rem;
+    }
+
+    &--blue-border {
+      border-bottom: 1px solid $mainblue;
+      color: $mainblue;
     }
   }
 }
