@@ -62,7 +62,6 @@
   }
 
   &__img {
-    max-width: 3.5rem;
     grid-row: 1 / span 2;
     margin-right: 1.2rem;
   }
