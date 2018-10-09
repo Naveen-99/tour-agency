@@ -8,26 +8,40 @@
   <meta name="keywords" content="Travel planning, travel bundles, travel escapes, affoedable travel">
   <meta name="description" content="Your clarity. One trip away. We create soul restoring journeys that inspire you to be you.">
   <link rel="stylesheet" href="temp/styles/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
 
   <header>
-    <img src="assets/images/icons/clear-view-escapes.svg">
-    <a href="#" class="btn">Get in Touch</a>
-    <nav>
-      <ul>
-        <li>
-          <a href="#our-beginning">Our Beginning</a>
-        </li>
-        <li>
-          <a href="#features">Features</a>
-        </li>
-        <li>
-          <a href="#testimonials">Testimonials</a>
-        </li>
-      </ul>
-    </nav>
+    <div>
+      <nav class="navbar">
+        <span class="navbar-toggle" id="js-navbar-toggle">
+          <i class="fa fa-bars" aria-hidden="true"></i>
+        </span>
+        <div class="logo">
+          <span>Logo</span>
+        </div>
+        <ul class="main-nav" id="js-menu">
+          <li>
+            <a href="#our-beginning" class="nav-links">Our Beginning</a>
+          </li>
+          <li>
+            <a href="#features-section" class="nav-links">Features</a>
+          </li>
+          <li>
+            <a href="#testimonials" class="nav-links">Testimonials</a>
+          </li>
+          <li>
+            <a href="#" class="btn btn-header">Get in Touch</a>
+          </li>
+        </ul>
+
+
+
+      </nav>
+    </div>
+
   </header>
 
   <div class="large-hero">
@@ -111,7 +125,7 @@
     </div>
   </div>
 
-  <div class="page-section page-section__blue">
+  <div id="features-section" class="page-section page-section__blue">
     <div class="wrapper">
       <div class="featuers__tittle">
         <span class="icon icon--star"></span>
@@ -241,6 +255,7 @@
       </p>
     </div>
   </footer>
+  <script src="/temp/scripts/app.js"></script>
 </body>
 
 </html>
